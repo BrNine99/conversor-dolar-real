@@ -1,0 +1,102 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 28px;
+}
+
+/* Caixa do conversor */
+main {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de conversão */
+section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+/* Símbolos das moedas */
+.cur {
+    background-color: #e2e8f0;
+    padding: 15px;
+    font-weight: bold;
+    color: #334155;
+    min-width: 65px;
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+/* Destaque ao selecionar */
+section:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
